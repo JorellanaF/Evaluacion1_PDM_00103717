@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Evaluacion1</string>
+    <string name="string_tittle">Contador de productos</string>
+    <string name="string_producto_1">Producto 1</string>
+    <string name="valor_inicial_0">0</string>
+    <string name="string_factura">Factura</string>
 </resources>

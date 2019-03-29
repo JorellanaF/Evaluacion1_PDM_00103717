@@ -4,18 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    tools:context=".Main2Activity"
     android:padding="@dimen/padding_general"
-    tools:context=".MainActivity">
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/string_tittle"/>
+        android:text="@string/string_factura"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/send_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/send_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/send_productos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detalles de productos"/>
+    </LinearLayout>
+
     <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:columnCount="3"
         android:padding="@dimen/padding_general"
         >
@@ -36,8 +65,7 @@
             <TextView
                 android:id="@+id/et_p1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/valor_inicial_0"/>
+                android:layout_height="wrap_content" />
         </LinearLayout>
         <LinearLayout
             android:id="@+id/ll_p2"
@@ -57,8 +85,7 @@
             <TextView
                 android:id="@+id/et_p2"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/valor_inicial_0"/>
+                android:layout_height="wrap_content" />
         </LinearLayout>
         <LinearLayout
             android:id="@+id/ll_p3"
@@ -78,39 +105,7 @@
             <TextView
                 android:id="@+id/et_p3"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/valor_inicial_0"/>
+                android:layout_height="wrap_content" />
         </LinearLayout>
     </GridLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Usuario"/>
-        <EditText
-            android:id="@+id/et_user"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Escribe el usuario aqui"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Corre Electrónico"/>
-        <EditText
-            android:id="@+id/et_email"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Escribe el correo aqui"/>
-        <Button
-            android:id="@+id/btn_enviar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Enviar"
-            android:layout_gravity="center"/>
-    </LinearLayout>
-
-
 </LinearLayout>
